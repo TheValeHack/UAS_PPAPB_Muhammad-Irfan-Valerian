@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/item_note_background">
+
+    <LinearLayout
+        android:id="@+id/infoBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/syncStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="1dp"
+            android:paddingHorizontal="12dp"
+            android:backgroundTint="@color/red_200"
+            android:background="@drawable/note_info_background">
+            <TextView
+                android:id="@+id/tvSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/red_700"
+                android:text="UnSynced"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/reminderStatus"
+            android:paddingVertical="1dp"
+            android:paddingHorizontal="12dp"
+            android:layout_marginLeft="12dp"
+            android:backgroundTint="@color/blue_200"
+            android:background="@drawable/note_info_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/blue_700"
+                android:text="Reminder: None"/>
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/pinIcon"
+            android:visibility="gone"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/baseline_push_pin_24"
+            app:tint="@color/grey_2"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Judul"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="konten"
+        android:textColor="@color/black"
+        android:maxLines="3"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="tanggal"
+        android:textColor="@color/grey_2" />
+
+</LinearLayout>

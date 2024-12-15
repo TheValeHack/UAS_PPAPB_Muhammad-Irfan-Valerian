@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="dark_mode"
+        android:title="Dark Mode"
+        android:summary="Enable dark mode for the app"
+        android:icon="@drawable/baseline_dark_mode_24"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="font_size"
+        android:title="Font Size"
+        android:summary="Select the font size for notes"
+        android:entries="@array/font_size_options"
+        android:entryValues="@array/font_size_values"
+        android:icon="@drawable/baseline_font_download_24"
+        android:defaultValue="medium" />
+
+    <ListPreference
+        android:key="view_mode"
+        android:title="View Mode"
+        android:summary="Choose between list or grid view"
+        android:entries="@array/view_mode_options"
+        android:entryValues="@array/view_mode_values"
+        android:icon="@drawable/baseline_list_24"
+        android:defaultValue="list" />
+</PreferenceScreen>
